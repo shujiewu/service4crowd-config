@@ -1,0 +1,13 @@
+EUREKA_HOST: 192.168.3.216
+EUREKA_PORT: 8771
+server:
+  port: 8761
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8771}/eureka/
+
+spring:
+  application:
+    name: server-gate
